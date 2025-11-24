@@ -102,26 +102,6 @@ nav#menu{
 	display: block;
 }
 
-.animatable {
-  /* initially hide animatable objects */
-  visibility: hidden;
-
-  /* initially pause animatable objects their animations */
-  animation-play-state: paused;
-}
-
-/* show objects being animated */
-.animated {
-  visibility: visible;
-
-  animation-fill-mode: both;
-  animation-duration: 1s;
-  animation-play-state: running;
-}
-
-
-
-
 
 /*header-section style start*/
 
@@ -901,7 +881,7 @@ nav ul li a {
 	margin-top: 15px;
 }
 .t-box{
-	width: 100%;
+	width: auto;
 }
 .img-conten p{
 	max-width: 230px;
@@ -924,8 +904,6 @@ nav ul li a {
   .mobile-menu{
   	display: none;
   }
-
-
 }
 
 
@@ -1042,8 +1020,9 @@ header {
     gap: 30px;
 }
 .img-section:after, .img-sec:before {
-    left: 333px;
+    left: 50%;
     bottom: -16px;
+    transform: translate(-50%, 0);
 }
 .right-content h2{
 	font-size: 45px;
@@ -1052,9 +1031,7 @@ header {
 .img-box img, .last-img img{
 	width: 100%;
 }
-.img-section:after, .img-sec:before{
-	left: 193px;
-}
+
 
 
 
@@ -1064,12 +1041,6 @@ header {
 
 
 @media (max-width: 639px){
-	.t-box{
-	left: 67px;
-.t-box {
-    width: 340px;
-    left: 67px;
-}
 .image {
     height: 456px;
 }
@@ -1094,15 +1065,6 @@ header {
 
 
 @media (max-width: 479px){
-
-
-.t-box {
-    width: 240px;
-    left: 37px;
-}
-.img-section:after, .img-sec:before {
-    left: 113px;
-}
 
 .mess-box span{
 	font-size: 16px;
